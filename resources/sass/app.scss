@@ -1,0 +1,523 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+html, body{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+//Estilos perfil
+#perfilCard {
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    top: 40px;
+    margin-right: 10px;
+    background-color: $theme-color-first;
+    visibility: hidden;
+}
+
+#imgPerfil{
+    background-color: white;
+    width: 100px;
+    height: 100px; margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.menu-perfil {
+    border-top: 1px solid gray;
+    padding: 5px 2px;
+    color: black;
+    justify-content: center;
+    display: flex;
+}
+
+.name-perfil {
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    padding: 0px 2px 10px 2px;
+}
+
+.salir {
+    color: white;
+    background-color: #4e342e;
+    padding: 2px 30px;
+    border-radius: 5px;
+}
+
+.salir:hover{
+    color:white;
+}
+
+.cart-badge{
+    right: 10px;
+    position: relative;
+    top: -10px;
+    background-color: red !important;
+}
+
+//Estilos shopping cart
+//Estilos perfil
+
+#backDropShoppingCard {
+    position: absolute;
+    width: 100%;
+    height: 92vh;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+    margin-top: 8vh;
+    visibility: hidden;
+  }
+
+#shoppingCard {
+    z-index: 50;
+    background-color: #795548;
+    height: 70vh !important;
+    width: 90% !important;
+    margin: 7vh 0vh 15vh 0vh;
+}
+
+.card.resumen {
+    background-color: white !important;
+    width: 90%;
+    height: 40vh;
+    margin: 20px 10px;
+}
+
+div.card.resumen > div.card-header {
+    background-color: #8d6e63;
+    color: white;
+}
+
+.card-text.title {
+    border: 2px solid #795548;
+    border-right: 1px solid gray;
+    background-color: #a1887f;
+    justify-content: center;
+    display: flex;
+    height: 25px !important;
+}
+
+.cart-pic {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#cart-container {
+    padding: 10px 5px 0px 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.cart-footer.shopping {
+    justify-content: space-around;
+    display: flex;
+}
+
+.btn-cart,.btn-cart:hover{
+    width: 200px !important;
+    margin: 10px;
+    background-color: white !important;
+    color: #795548;
+    border: 1px solid #795548;
+    font-weight: bold;
+
+}
+
+#cart-item {
+    margin-top: 5px;
+}
+
+
+//Estilos del header
+
+div.title{
+    color:green;
+}
+
+.r-menu,.l-menu{
+    display:flex;
+    align-items:center;
+}
+
+ul.nav{
+    background-color:$theme-color-first;
+    height:60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.nav-link,a.dropdown-item,a.dropdown-item:hover{
+    color:$theme-color-five !important;
+}
+
+a.nav-link:hover{
+    color:$theme-color-five !important;
+    text-decoration: underline;
+}
+
+div.nav-link, div.nav-link:hover{
+    color:$theme-color-five;
+    font-size: 24px;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+div.nav-link span, div.nav-link span:hover {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.image-menu img, svg {
+    width: 24px;
+    height: 24px;
+}
+ul.dropdown-menu,ul.dropdown-menu.show,ul.dropdown-menu.show:hover {
+    background-color: $theme-color-three !important;
+}
+ul.dropdown-menu.show>li:hover,li>a.dropdown-item:hover{
+    background-color: $theme-color-first !important;
+}
+
+//Estilo panel del body
+
+#work-panel {
+    height: 100%;
+    width: 100%;
+    // background-color: $theme-color-four;
+    justify-content: center;
+    align-content: center;
+    border: none !important;
+}
+
+#work-panel.card>div.card-body{
+border: none !important;
+}
+//Estilo breadcrumb
+.breadcrumb-item{
+    color:$theme-color-first;
+    font-size:14px;
+}
+
+.breadcrumb-item.active{
+    color:$theme-color-first;
+    font-size:14px;
+    font-weight: bold;
+}
+
+//Estilo del panel de busqueda
+
+#basic-tool-panel.card{
+    border-radius: 5px;
+}
+
+#basic-tool-panel.card > div.card-body {
+    display: flex;
+    background-color: $theme-color-three;
+    border-radius: 5px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.row.rowToolsBar {
+    width: auto !important;
+    display: flex;
+}
+
+svg.btn-add {
+    width: 32px;
+    height: 32px;
+    color: $theme-color-five;
+    margin: 2px 30px 2px 2px;
+}
+
+svg.btn-add:hover {
+    width: 32px;
+    height: 32px;
+    color: $theme-color-first;
+    margin: 2px 30px 2px 2px;
+}
+
+svg.btn-search{
+    color:$theme-color-second;
+}
+
+.btnSearch{
+    text-decoration: none;
+    color:$theme-color-first !important;
+}
+
+//Estilo del formulario de busqueda
+.form.form-search {
+    width: 100%;
+    display: flex;
+}
+
+div.search-panel {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-group.input-group-search {
+    width: auto;
+}
+
+//Estilo del list panel
+#empty-list-panel{
+    background-color: $theme-color-four;
+    margin-top: 15px;
+    border: 2px solid $theme-color-three;
+}
+
+#empty-list-panel.card>div.card-body{
+    height: auto;
+    background-color: $theme-color-four;
+    border-radius: 5px;
+    color:$theme-color-first;
+    font-size:14px;
+}
+
+#items-list-panel{
+    background-color: $theme-color-four;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 2px solid $theme-color-three;
+}
+
+#items-list-panel.card>div.card-body{
+    height: auto;
+    background-color: $theme-color-four;
+    border-radius: 5px;
+    color:$theme-color-first;
+    font-size:14px;
+}
+
+#items-list-panel.card>div.card-header{
+    background-color: $theme-color-three;
+    color:$theme-color-five;
+    display: flex;
+    justify-content: space-between;
+}
+
+//Estilo del formulario
+
+.modal-header{
+    background-color: $theme-color-second;
+    color:$theme-color-five;
+}
+
+.modal-body{
+    background-color: $theme-color-three;
+}
+
+.form-footer {
+    margin: 15px 0px 0px 0px;
+    padding-top:10px;
+    display: flex;
+    justify-content: end;
+    background-color:$theme-color-three;
+}
+
+.form-footer > button {
+    margin: 5px !important;
+    background-color: $theme-color-second;
+}
+
+.btn.btn-theme{
+    background-color:$theme-color-second !important;
+    color: $theme-color-five !important;
+}
+
+.btn.btn-theme:hover{
+    background-color:$theme-color-first !important;
+    color: $theme-color-five !important;
+}
+
+//Estilo divider
+.divider {
+    height: 0;
+    margin: 20px 0px;
+    overflow: hidden;
+    border-top: 1px solid $theme-color-five;
+    opacity: 1;
+}
+
+// Estilo del Paginador
+.nav_page {
+    justify-content: end;
+    display: flex;
+    margin-top: 20px;
+}
+// nav {
+//     background-color: $theme-color-four;
+// }
+
+span.page-link,a.page-link,.page-link.disabled, .disabled > .page-link{
+    background-color: $theme-color-three;
+    color:$theme-color-five;
+}
+
+span.page-link:hover,a.page-link:hover,li.page-item.disabled:hover,.page-link.disabled:hover, .disabled > .page-link:hover{
+    background-color: $theme-color-three;
+    border: 2px solid $theme-color-first;
+    color:$theme-color-five;
+}
+
+.page-link.active,.page-link.active, .active > .page-link{
+    background-color: $theme-color-second !important;
+    color:$theme-color-five;
+}
+//Estilo iconos de las opciones de los card
+
+svg.card-opcion{
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 5px !important;
+}
+
+
+//Estilo de la ventana crear
+.pictureLoad{
+    margin-top:30px !important;
+}
+
+//Estilo card-ingredients.list-group-item.card-list {
+.list-group-item.card-list {
+    background-color: #d7ccc8;
+    color: #795548;
+    border: none;
+}
+
+//Estilo ventana adicionar receta
+.card-header.ingredient {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+//Estilos de la tienda
+div#work-panel-shop.card {
+    border: none !important;
+}
+
+#work-panel-shop{
+    //background-color:$theme-color-three;
+    max-height: 100vh;
+    height: 100%;
+    opacity: 0.80;
+}
+
+#work-panel-shop.card > div.card-body {
+    border: none !important;
+   // background-color: $theme-color-three;
+}
+
+#basic-tool-panel-shop.card {
+    border: none;
+    background-color: transparent;
+}
+
+.description-item {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+h6.card-title.item, .card-title.item.h6,h5.card-title.item, .card-title.item.h5 {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    text-decoration: none !important;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+
+//Estilo de los detalles de Recetas
+
+.wrapper-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.wrapper-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.wrapper-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.wrapper-9 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+#btnAddToCarr{
+    width:100%;
+    background-color:$theme-color-first;
+    border: none;
+}
+
+
+//Estilos Login page
+
+.bg-first{
+    background-color: $theme-color-first !important;
+}
+
+.login-title{
+    color: $theme-color-first !important;
+    font-weight:bold !important;
+    font-size:28px !important;
+}
+
+
+.login-panel{
+    border: 5px solid $theme-color-first;
+    padding: 50px;
+    border-radius: 10px;
+    color:$theme-color-first !important;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
